@@ -1,0 +1,62 @@
+:root {
+    --font-size: 1em;
+    --font-color: #edf0f1;
+    --bg-color: #24252A;
+}
+
+nav {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem 10%;
+    font-size: var(--font-size);
+    color: var(--font-color);
+}
+
+.logo {
+    margin-right: auto;
+    font-family: 'Indie Flower', 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.join-container {
+    display: inline-flex;
+}
+
+button {
+    padding: 1ch 3ch;
+    background-color: rgba(0, 136, 169, 1);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 5px;
+    border-left: 5px;
+    border-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: var(--font-size);
+    color: var(--font-color);
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.7);
+}
+
+button:active {
+    background-color: #24252A;
+}
+
+input {
+    padding: 1ch 2ch;
+    max-width: 16ch;
+    border: none;
+    font-size: var(--font-size);
+    color: var(--bg-color);
+    background-color: var(--font-color);
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+}
